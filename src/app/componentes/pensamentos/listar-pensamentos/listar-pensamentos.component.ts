@@ -30,4 +30,5 @@ export class ListarPensamentosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }
