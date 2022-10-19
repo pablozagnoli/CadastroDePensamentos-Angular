@@ -2,15 +2,21 @@
   "pensamentos": [
     {
       "id": 1,
-      "conteudo": "Testando função de editar",
-      "autoria": "Gutão",
-      "modelo": "modelo3"
+      "conteudo": "Que bom que vc veio",
+      "autoria": "Nay",
+      "modelo": "modelo1"
     },
     {
-      "conteudo": "testando",
-      "autoria": "fsdfds",
-      "modelo": "modelo3",
-      "id": 2
+      "id": 2,
+      "conteudo": "Estudando Angular",
+      "autoria": "Dev Alura",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é o melhor",
+      "autoria": "Nay",
+      "modelo": "modelo3"
     }
   ]
 }
