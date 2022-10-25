@@ -13,8 +13,8 @@ export class PensamentoService {
   constructor(private http: HttpClient) { }
 
 Listar() {
-return this.http.get<Pensamento>(this.API, {headers: {'X-Parse-Application-Id':'m3UgfLRTEySnj2ZQ52K8g4eJePPGCEbPOc5i31Pf',
-                                          'X-Parse-REST-API-Key':'XghWPrldwIgCSBgq57ytNtrbTNmBLz9iQ5e1BIIj'}})
+return this.http.get<Pensamento[]>(this.API, {headers: {'X-Parse-Application-Id':'m3UgfLRTEySnj2ZQ52K8g4eJePPGCEbPOc5i31Pf',
+                                                      'X-Parse-REST-API-Key':'XghWPrldwIgCSBgq57ytNtrbTNmBLz9iQ5e1BIIj'}})
 }
 
 }
