@@ -1,6 +1,6 @@
 import { PensamentoService } from './../pensamento.service';
 import { Component, OnInit } from '@angular/core';
-import { results } from '../pensamento';
+import { results, resultoDTO } from '../pensamento';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -9,13 +9,24 @@ import { results } from '../pensamento';
 })
 export class ListarPensamentoComponent implements OnInit {
 
+
   listaPensamentos: results[] = [];
+
+  ResultoDTO: resultoDTO = {
+    pensamentos: this.listaPensamentos
+  };
 
   constructor(private service: PensamentoService) { }
 
-  ngOnInit(): void {
-    this.service.Listar().subscribe((listaPensamento) => {
-      this.listaPensamentos = listaPensamento
+  async ngOnInit() {
+    this.ListarPensamentos();
+  }
+
+  ListarPensamentos() {
+    (this.service.Listar()).subscribe((listaPensamento) => {
+      this.listaPensamentos = listaPensamento.results,
+
+      console.log(this.listaPensamentos)
     })
   }
 }

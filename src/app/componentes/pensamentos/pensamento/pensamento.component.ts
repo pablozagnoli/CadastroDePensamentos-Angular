@@ -1,4 +1,4 @@
-import { results } from './../pensamento';
+import { results, resultoDTO } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
