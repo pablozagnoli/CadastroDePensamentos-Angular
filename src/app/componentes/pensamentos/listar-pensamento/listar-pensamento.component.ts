@@ -20,9 +20,7 @@ export class ListarPensamentoComponent implements OnInit {
 
   ListarPensamentos() {
     (this.service.Listar()).subscribe((listaPensamento) => {
-      this.listaPensamentos = listaPensamento.results,
-
-      console.log(this.listaPensamentos)
+      this.listaPensamentos = listaPensamento.results
     })
   }
 }
