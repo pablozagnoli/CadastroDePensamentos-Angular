@@ -12,10 +12,6 @@ export class ListarPensamentoComponent implements OnInit {
 
   listaPensamentos: results[] = [];
 
-  ResultoDTO: resultoDTO = {
-    pensamentos: this.listaPensamentos
-  };
-
   constructor(private service: PensamentoService) { }
 
   async ngOnInit() {
