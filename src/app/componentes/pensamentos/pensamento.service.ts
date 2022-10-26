@@ -11,8 +11,6 @@ export class PensamentoService {
 
   private readonly API = "https://parseapi.back4app.com/parse/classes/PENSAMENTO";
 
-  private readonly API2 = 'http://localhost:3000/results';
-
   constructor(private http: HttpClient) { }
 
   Listar(): Observable<any> {
@@ -33,10 +31,5 @@ export class PensamentoService {
         }
       })
       return result;
-  }
-
-  Listar2(): Observable<results[]> {
-    let result: Observable<results[]> = this.http.get<results[]>(this.API2)
-    return result;
   }
 }
